@@ -10,3 +10,165 @@ canvas[resize] {
     width: 100%;
     height: 100%;
 }
+
+
+.hidden {
+	display:none;
+}
+
+.container {
+	width:100%;
+	height:100%;
+}
+
+.displayedView {
+	display:none;
+}
+
+.gameDiv .active {
+	display:block !important;
+}
+
+.gameDiv {
+	width:100%;
+	height:100%;
+}
+
+.mainMenu, .optionsMenu, .inGame, .credits {
+	width:100%;
+	height:100%;
+}
+
+.backBTN{
+	padding: 5px 30px !important;
+	margin-left: 0px !important;
+}
+
+/* Main Menu - Start */
+
+.mainMenu {
+	background-color:#86d6d8;
+}
+
+.mainMenuTitle {
+	color:#FFF;
+	padding-top:30px;
+	padding-bottom:10px;
+}
+
+.menuButtons .button-2 {
+	background: rgba(63,208,212,1) !important;
+	color: #fff;
+	box-shadow: 0 6px rgba(63,208,212,0.7);
+	-webkit-transition: none;
+	-moz-transition: none;
+	transition: none;
+	height: 42px;
+	padding: 8px 40px;
+	margin: 5px 5px;
+}
+
+.menuButtons .button-2:hover {
+	box-shadow: 0 4px rgba(63,208,212,0.7) !important;
+}
+
+/* Main Menu - End */
+
+/* Options Menu - Start */
+
+.optionsMenu {
+	background-color:grey;
+}
+
+/* Options Menu - End */
+
+/* in Game - Start */
+
+.inGame {
+	background-color:red;
+}
+
+#GameContainer{
+	position:relative;
+	width:100%;
+	height:50%;
+	min-height:210px;
+	background-color:#FFF;
+	border: 5px solid black;
+	border-radius: 5px;
+}
+
+#CurrentShapeContainer{
+	display: flex;
+  	align-items: center;
+}
+
+#CurrentShape{
+	width:150px;
+	height:150px;
+}
+
+#ChoseShapeContainer{
+	width:100%;
+	height:20%;
+	min-height:100px;
+	background-color:green;
+	border: 5px solid black;
+	border-radius: 5px;
+}
+
+/* Shapes - Start */
+
+.circle{
+	border-radius: 50%;
+    behavior: url(PIE.htc); /* remove if you don't care about IE8 */
+}
+
+.triangle{
+	width: 100%;
+    height: 100%;
+
+    /* The points are: centered top, left bottom, right bottom */
+    clip-path: polygon(50% 0, 0 100%, 100% 100%);
+}
+
+.square{
+	width: 100%;
+    height: 100%;
+}
+
+/* Shapes - End */
+
+/* Shape Colors - Start */
+
+.red{
+	background-color:red;
+}
+
+.blue{
+	background-color:blue;
+}
+
+.green{
+    background-color:green;
+}
+
+.yellow{
+    background-color:yellow;
+}
+
+.cyan{
+    background-color:cyan;
+}
+
+/* Shape Colors - End */
+
+/* in Game - End */
+
+/* Credits - Start */
+
+.credits {
+	background-color:blue;
+}
+
+/* Credits - End */
