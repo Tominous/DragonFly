@@ -38,9 +38,68 @@
     </style>
 </head>
 <body>
-    <audio loop id="dragon" src="Audio/Flying.mp3" autoplay autobuffer preload=none style="display:none"></audio>
 
-    <canvas id="canvas" resize hidpi="off"></canvas>
+	<div class="container">
+
+			<div class="gameDiv">
+
+				<!-- Main Menu - Start -->
+
+				<div class="mainMenu col-lg-12 displayedView active">
+
+					<center>
+
+						<h1 class="mainMenuTitle">Memorize</h1>
+
+						<div class="menuButtons btnContainer">
+
+							<p class="col-lg-12 BTNRow">
+								<button class="button button-2 button-2c" id="BTNStartGame">Start Game</button>
+							</p>
+
+							<p class="col-lg-12 BTNRow">
+								<button class="button button-2 button-2c" id="BTNOptions">Options</button>
+							</p>
+
+							<p class="col-lg-12 BTNRow">
+								<button class="button button-2 button-2c" id="BTNCredits">Credits</button>
+							</p>
+
+						</div>
+
+					</center>
+
+				</div>
+
+				<!-- Main Menu - End -->
+
+				<div class="inGame col-lg-12 displayedView">
+					
+					<canvas id="canvas" resize hidpi="off"></canvas>
+					
+				</div>
+
+				<div class="optionsMenu col-lg-12 displayedView">
+
+					<p class="col-lg-12 BTNRow">
+						<button class="button button-2 button-2c backBTN">Menu</button>
+					</p>
+					
+				</div>
+
+				<div class="credits col-lg-12 displayedView">
+
+					<p class="col-lg-12 BTNRow">
+						<button class="button button-2 button-2c backBTN">Menu</button>
+					</p>
+					
+				</div>
+
+			</div>
+
+		</div><!-- /container -->
+
+    <audio loop id="dragon" src="Audio/Flying.mp3" autoplay autobuffer preload=none style="display:none"></audio>
 
     <script src="js/scripts.js"></script>
     <script type="text/paperscript" canvas="canvas">
