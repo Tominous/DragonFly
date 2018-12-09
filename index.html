@@ -116,7 +116,7 @@
 
 		</div><!-- /container -->
 
-    <audio loop id="dragon" src="Audio/Flying.mp3" autoplay autobuffer preload=none style="display:none"></audio>
+    <audio loop id="dragon" src="Audio/Flying.mp3" autobuffer preload=none style="display:none"></audio>
 
     <script src="js/scripts.js"></script>
     <script type="text/paperscript" canvas="canvas">
@@ -127,7 +127,7 @@
 	    pluginPath: '/assets/mediaelement/',
 	    success: function(me) {
 	        mediaElement = me;
-	        me.play();
+	        //me.play();
 	        me.addEventListener('timeupdate', function(time) {
 	            if (me.currentTime > 3.7)
 	                playing = true;
