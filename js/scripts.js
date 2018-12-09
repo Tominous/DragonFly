@@ -24,6 +24,7 @@ var dragonfly = (function (dragonfly) {
 		var $GameContainer = $('#GameContainer');
 		var $CurrentShapeContainer = $('#CurrentShapeContainer');
 		var $CurrentShape = $('#CurrentShape');
+		var $canvas = $('#canvas');
 
 		// Audio / Sound
 
