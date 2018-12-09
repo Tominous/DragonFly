@@ -1,5 +1,3 @@
-
-
 var dragonfly = (function (dragonfly) {
 
 	dragonfly.logic = (function (logic) {
@@ -50,6 +48,7 @@ var dragonfly = (function (dragonfly) {
 		// GUI Logic - Start
 
 		// Opens the View with the specified class name.
+
 		function openView(viewClass) {
 			close();
 			$(viewClass).addClass("active");
